@@ -1,0 +1,19 @@
+diff -Naur pam-python-1.0.4.orig/src/Makefile pam-python-1.0.4/src/Makefile
+--- pam-python-1.0.4.orig/src/Makefile	2014-06-10 13:34:35.000000000 +0000
++++ pam-python-1.0.4/src/Makefile	2016-02-11 16:30:48.685451890 +0000
+@@ -37,5 +37,5 @@
+ 
+ .PHONY: test
+ test: pam_python.so ctest /etc/pam.d/test-pam_python.pam
+-	python test.py
++	python2 test.py
+ 	./ctest
+diff -Naur pam-python-1.0.4.orig/src/setup.py pam-python-1.0.4/src/setup.py
+--- pam-python-1.0.4.orig/src/setup.py	2014-06-10 13:34:35.000000000 +0000
++++ pam-python-1.0.4/src/setup.py	2016-02-11 16:29:47.016580617 +0000
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python -W default
++#!/usr/bin/python2 -W default
+ import warnings; warnings.simplefilter('default')
+ 
+ import distutils.sysconfig
