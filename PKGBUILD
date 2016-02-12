@@ -14,7 +14,7 @@ url="http://pam-python.sourceforge.net"
 license=('AGPL3')
 groups=()
 depends=("python2" "pam")
-makedepends=("python-sphinx" "sudo")
+makedepends=("python2-sphinx" "sudo")
 checkdepends=()
 optdepends=()
 provides=()
@@ -28,7 +28,7 @@ source=("https://sourceforge.net/projects/$pkgname/files/$pkgname-$pkgver-1/$pkg
 	"$pkgname-${pkgver}_python2.patch")
 noextract=()
 md5sums=('55176ff034ab4417768232d98e9b84d5'
-         '34e23d62572bb6b4c3c6a8e409546621')
+         'be6900e054e031ab509666f15b0587c4')
 validpgpkeys=()
 
 prepare() {

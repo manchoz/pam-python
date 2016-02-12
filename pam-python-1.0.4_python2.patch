@@ -1,6 +1,18 @@
+diff -Naur pam-python-1.0.4.orig/doc/Makefile pam-python-1.0.4/doc/Makefile
+--- pam-python-1.0.4.orig/doc/Makefile	2014-06-10 15:34:35.000000000 +0200
++++ pam-python-1.0.4/doc/Makefile	2016-02-12 10:24:11.006666659 +0100
+@@ -3,7 +3,7 @@
+ 
+ .PHONY: build
+ build:
+-	sphinx-build -b html -E . html
++	sphinx-build2 -b html -E . html
+ 	rm -f html/index.html && ln -s pam_python.html html/index.html
+ 
+ .PHONY: install install-doc
 diff -Naur pam-python-1.0.4.orig/src/Makefile pam-python-1.0.4/src/Makefile
---- pam-python-1.0.4.orig/src/Makefile	2014-06-10 13:34:35.000000000 +0000
-+++ pam-python-1.0.4/src/Makefile	2016-02-11 16:30:48.685451890 +0000
+--- pam-python-1.0.4.orig/src/Makefile	2014-06-10 15:34:35.000000000 +0200
++++ pam-python-1.0.4/src/Makefile	2016-02-12 10:23:18.149999999 +0100
 @@ -37,5 +37,5 @@
  
  .PHONY: test
@@ -9,8 +21,8 @@ diff -Naur pam-python-1.0.4.orig/src/Makefile pam-python-1.0.4/src/Makefile
 +	python2 test.py
  	./ctest
 diff -Naur pam-python-1.0.4.orig/src/setup.py pam-python-1.0.4/src/setup.py
---- pam-python-1.0.4.orig/src/setup.py	2014-06-10 13:34:35.000000000 +0000
-+++ pam-python-1.0.4/src/setup.py	2016-02-11 16:29:47.016580617 +0000
+--- pam-python-1.0.4.orig/src/setup.py	2014-06-10 15:34:35.000000000 +0200
++++ pam-python-1.0.4/src/setup.py	2016-02-12 10:23:18.149999999 +0100
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python -W default
 +#!/usr/bin/python2 -W default
